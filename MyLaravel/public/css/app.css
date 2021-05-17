@@ -31,15 +31,6 @@ nav ul {
   font-weight: 600;
 }
 
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
 nav input {
   border: none;
   border-bottom: 1px solid #0282F9;
@@ -53,14 +44,27 @@ nav input {
 #current-series {
   padding-top: 5%;
   padding-bottom: 5%;
+  position: relative;
+  color: white;
   background-color: #1C1C1C;
+}
+
+#current-series .title,
+#current-series button {
+  padding: 0.5em 1em;
+  background-color: #0282F9;
+}
+
+#current-series .title {
+  position: absolute;
+  top: -2em;
 }
 
 #current-series #thumbs {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-gap: 1em;
+  grid-gap: 1.5em;
+  margin-bottom: 2em;
 }
 
 #current-series #thumbs .box {
@@ -77,6 +81,43 @@ nav input {
   max-width: 100%;
 }
 
+#current-series button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  font-weight: 600;
+  color: white;
+}
+
+#cta {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #0282F9;
+  color: white;
+}
+
+#cta ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+#cta ul li a {
+  display: flex;
+  align-items: center;
+}
+
+#cta ul li a img {
+  max-height: 50px;
+  margin-right: 1em;
+}
+
+#cta ul li:last-child img {
+  max-height: 40px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -91,5 +132,14 @@ nav input {
 * body .centering {
   padding-left: 20%;
   padding-right: 20%;
+}
+
+* body .centering li {
+  list-style: none;
+}
+
+* body .centering li a {
+  text-decoration: none;
+  color: inherit;
 }
 

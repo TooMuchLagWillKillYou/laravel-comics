@@ -16,6 +16,16 @@
             
             padding-left: 20%;
             padding-right: 20%;     
+
+            li {
+                list-style: none;
+    
+                a{
+    
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
         }
     }
 
