@@ -24,3 +24,5 @@
         <input type="text" placeholder="Search">
     </nav>
 </div>
+
+<div id="jumbotron"></div>

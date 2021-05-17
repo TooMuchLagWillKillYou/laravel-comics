@@ -45,6 +45,11 @@ nav input {
   border-bottom: 1px solid #0282F9;
 }
 
+#jumbotron {
+  height: 400px;
+  background-image: url("/storage/assets/jumbotron.jpg");
+}
+
 * {
   margin: 0;
   padding: 0;
