@@ -1,0 +1,22 @@
+@import 'partials/variables';
+@import 'partials/homepage';
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+
+    body{
+
+        font-family: 'Roboto Condensed', sans-serif;
+
+        .centering {
+            
+            padding-left: 20%;
+            padding-right: 20%;     
+        }
+    }
+
+}
