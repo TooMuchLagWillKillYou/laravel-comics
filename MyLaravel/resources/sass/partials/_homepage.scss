@@ -58,3 +58,39 @@ nav {
     height: 400px;
     background-image: url('/storage/assets/jumbotron.jpg');
 }
+
+// SECTION
+
+#current-series {
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: $darkgray;
+
+    #thumbs{
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 1em;
+
+        .box {
+
+            color: white;
+            
+            .img-container {
+                
+                height: 150px;
+                margin-bottom: 1em;
+    
+                overflow: hidden;
+    
+                img {
+    
+                    max-width: 100%;
+                }
+            }
+        }
+        
+    }
+}
