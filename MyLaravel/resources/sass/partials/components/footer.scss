@@ -2,8 +2,8 @@ footer {
 
     #main-footer {
 
-        padding-top: 2%;
-        padding-bottom: 2%;
+        @include vertical-padding; 
+
         position: relative;
         overflow: hidden;
     
@@ -52,8 +52,8 @@ footer {
         justify-content: space-between;
         align-items: center;
 
-        padding-top: 2%;
-        padding-bottom: 2%;
+        @include vertical-padding; 
+
         background: $gray;
 
         button {

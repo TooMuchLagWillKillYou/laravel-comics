@@ -1,0 +1,32 @@
+#blue-bar {
+
+    height: 70px;
+    position: relative;
+    background-color: $blue;
+
+    img {
+
+        height: 250px;
+        border: 1px solid white;
+        position: absolute;
+        bottom: 20px;
+    }
+}
+
+section {
+
+    @include vertical-padding; 
+
+    display: flex;
+    justify-content: space-between;
+
+    .description {
+
+        width: 65%;
+
+        .price {
+
+            background-color: $green;
+        }
+    }
+}

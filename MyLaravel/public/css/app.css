@@ -75,6 +75,34 @@
   max-height: 40px;
 }
 
+#blue-bar {
+  height: 70px;
+  position: relative;
+  background-color: #0282F9;
+}
+
+#blue-bar img {
+  height: 250px;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 20px;
+}
+
+section {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .description {
+  width: 65%;
+}
+
+section .description .price {
+  background-color: #55BA59;
+}
+
 header #top-bar {
   display: flex;
   justify-content: flex-end;
@@ -204,8 +232,8 @@ footer #bottom-bar .social ul li img {
 }
 
 * body .centering {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 17%;
+  padding-right: 17%;
 }
 
 * body .centering li {

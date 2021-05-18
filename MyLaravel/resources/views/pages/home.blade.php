@@ -9,16 +9,18 @@
         <div id="thumbs">
 
             @foreach ($data as $d)
-            
-                <div class="box">
-                    <div class="img-container">
-                        <img src="{{ $d['thumb'] }}" alt="">
+
+                <a href="{{ route('single', $loop -> index) }}">
+                    <div class="box">
+                        <div class="img-container">
+                            <img src="{{ $d['thumb'] }}" alt="">
+                        </div>
+                        <p>
+                            {{ $d['title'] }}
+                        </p>
                     </div>
-                    <p>
-                        {{ $d['title'] }}
-                    </p>
-                </div>
-            
+                </a>
+                        
             @endforeach
 
         </div>

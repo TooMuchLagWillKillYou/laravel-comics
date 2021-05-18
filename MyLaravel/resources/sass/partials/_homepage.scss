@@ -59,8 +59,8 @@
 
 #cta {
 
-    padding-top: 2%;
-    padding-bottom: 2%;
+    @include vertical-padding; 
+
     background-color: $blue;
     color: white;
 

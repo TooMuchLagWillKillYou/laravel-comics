@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('home', 'MyController@homepage');
+
+Route::get('single/{index}', 'MyController@singlepage') -> name('single');
