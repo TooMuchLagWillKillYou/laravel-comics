@@ -75,32 +75,66 @@
   max-height: 40px;
 }
 
-#blue-bar {
+main #blue-bar {
   height: 70px;
   position: relative;
   background-color: #0282F9;
 }
 
-#blue-bar img {
+main #blue-bar img {
   height: 250px;
   border: 1px solid white;
   position: absolute;
   bottom: 20px;
 }
 
-section {
-  padding-top: 2%;
-  padding-bottom: 2%;
+main section {
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   justify-content: space-between;
 }
 
-section .description {
+main section .description {
   width: 65%;
 }
 
-section .description .price {
+main section .description .price {
+  margin: 1em 0;
+  padding: 0.7em 1.5em;
+  color: white;
   background-color: #55BA59;
+}
+
+main section .description .price span {
+  color: #B3FB9A;
+}
+
+main section .description p {
+  color: #959595;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+main section .talent,
+main section .specs {
+  width: 49%;
+}
+
+main section h3 {
+  color: #003F5E;
+}
+
+main section table tr td {
+  padding: 0.5em;
+}
+
+main section table tr td:first-child {
+  color: #003F5E;
+}
+
+main section table tr td:last-child {
+  color: #29BDE4;
 }
 
 header #top-bar {

@@ -1,32 +1,85 @@
-#blue-bar {
+main {
 
-    height: 70px;
-    position: relative;
-    background-color: $blue;
-
-    img {
-
-        height: 250px;
-        border: 1px solid white;
-        position: absolute;
-        bottom: 20px;
-    }
-}
-
-section {
-
-    @include vertical-padding; 
-
-    display: flex;
-    justify-content: space-between;
-
-    .description {
-
-        width: 65%;
-
-        .price {
-
-            background-color: $green;
+    #blue-bar {
+    
+        height: 70px;
+        position: relative;
+        background-color: $blue;
+    
+        img {
+    
+            height: 250px;
+            border: 1px solid white;
+            position: absolute;
+            bottom: 20px;
         }
     }
+    
+    section {
+    
+        padding-top: 5%;
+        padding-bottom: 5%;
+    
+        display: flex;
+        justify-content: space-between;
+    
+        .description {
+    
+            width: 65%;
+    
+            .price {
+    
+                margin: 1em 0;
+                padding: .7em 1.5em;
+                color: white;
+                background-color: $green;
+    
+                span {
+    
+                    color: $lightgreen;
+                }
+            }
+    
+            p {
+    
+                color: $lightgray;
+                font-size: 0.95em;
+                line-height: 1.5em;
+            }
+        }
+
+        .talent,
+        .specs {
+
+            width: 49%;
+        }
+
+        h3 {
+
+            color: $darkblue;
+        }
+
+        table {
+
+            tr {
+
+                td {
+
+                    padding: .5em;
+
+                    &:first-child {
+
+                        color: $darkblue;
+                    }
+
+                    &:last-child {
+
+                        color: $lightblue;
+                    }
+                }
+            }
+        }
+    }
+
+
 }
