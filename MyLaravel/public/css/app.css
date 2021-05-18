@@ -1,4 +1,4 @@
-#top-bar {
+header #top-bar {
   display: flex;
   justify-content: flex-end;
   padding-top: 0.5em;
@@ -9,7 +9,7 @@
   background-color: #0282F9;
 }
 
-nav {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,11 +17,11 @@ nav {
   padding-bottom: 0.5em;
 }
 
-nav img {
+header nav img {
   max-width: 80px;
 }
 
-nav ul {
+header nav ul {
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
@@ -31,12 +31,12 @@ nav ul {
   font-weight: 600;
 }
 
-nav input {
+header nav input {
   border: none;
   border-bottom: 1px solid #0282F9;
 }
 
-#jumbotron {
+header #jumbotron {
   height: 400px;
   background-image: url("/storage/assets/jumbotron.jpg");
 }
@@ -118,6 +118,80 @@ nav input {
   max-height: 40px;
 }
 
+footer #main-footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  position: relative;
+  overflow: hidden;
+  color: #959595;
+  background-image: url("/storage/assets/footer-bg.jpg");
+}
+
+footer #main-footer nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 400px;
+}
+
+footer #main-footer nav .f-list {
+  margin: 1em 2em 1em 0;
+}
+
+footer #main-footer nav .f-list h2 {
+  color: white;
+}
+
+footer #main-footer nav .f-list ul li {
+  margin-top: 0.5em;
+}
+
+footer #main-footer #logo-bg {
+  position: absolute;
+  right: 15%;
+  top: -50px;
+}
+
+footer #bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background: #303030;
+}
+
+footer #bottom-bar button {
+  padding: 1em 2em;
+  color: white;
+  font-weight: 600;
+  background-color: transparent;
+  border: 3px solid #0282F9;
+}
+
+footer #bottom-bar .social h2 {
+  display: inline-block;
+  color: #0282F9;
+  vertical-align: middle;
+}
+
+footer #bottom-bar .social ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer #bottom-bar .social ul li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+footer #bottom-bar .social ul li img {
+  max-width: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -130,8 +204,8 @@ nav input {
 }
 
 * body .centering {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 * body .centering li {
