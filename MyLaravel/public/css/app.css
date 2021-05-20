@@ -116,13 +116,38 @@ main section .description p {
   line-height: 1.5em;
 }
 
+main section .adv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+main section .adv h3 {
+  align-self: flex-end;
+  color: #959595;
+}
+
 main section .talent,
 main section .specs {
-  width: 49%;
+  width: 48%;
 }
 
 main section h3 {
   color: #003F5E;
+}
+
+main section table {
+  width: 100%;
+}
+
+main section table tr {
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+main section table tr th {
+  padding: 0.5em;
+  text-align: left;
 }
 
 main section table tr td {
@@ -130,11 +155,17 @@ main section table tr td {
 }
 
 main section table tr td:first-child {
+  width: 150px;
   color: #003F5E;
+  vertical-align: text-top;
 }
 
 main section table tr td:last-child {
   color: #29BDE4;
+}
+
+main section:last-child {
+  background-color: #F6F6F6;
 }
 
 header #top-bar {

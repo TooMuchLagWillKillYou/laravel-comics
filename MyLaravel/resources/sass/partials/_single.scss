@@ -48,10 +48,23 @@ main {
             }
         }
 
+        .adv {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            h3 {
+
+                align-self: flex-end;
+                color: $lightgray;
+            }
+        }
+
         .talent,
         .specs {
 
-            width: 49%;
+            width: 48%;
         }
 
         h3 {
@@ -61,7 +74,18 @@ main {
 
         table {
 
+            width: 100%;
+
             tr {
+
+                display: block;
+                border-bottom: 1px solid #ddd;
+                
+                th {
+                    
+                    padding: .5em;
+                    text-align: left;
+                }
 
                 td {
 
@@ -69,7 +93,9 @@ main {
 
                     &:first-child {
 
+                        width: 150px;
                         color: $darkblue;
+                        vertical-align: text-top;
                     }
 
                     &:last-child {
@@ -79,7 +105,10 @@ main {
                 }
             }
         }
+
+        &:last-child {
+
+            background-color: $sand;
+        }
     }
-
-
 }
